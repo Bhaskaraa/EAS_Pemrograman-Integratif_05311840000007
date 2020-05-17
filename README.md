@@ -1,4 +1,4 @@
-# EAS_Pemrograman-Integratif_05311840000007
+# Evaluasi Akhir Semester - Pemrograman Integratif 2020
 Repositori sebagai dokumentasi Final Project dan Evaluasi Akhir Semester Pemrograman Integratif 2020 \
 Oleh : 
 ```
