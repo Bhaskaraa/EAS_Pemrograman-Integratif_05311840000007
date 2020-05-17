@@ -8,8 +8,8 @@ Departemen  :   Teknologi Informasi
 ```
 
 ## Setup
-- Database
-- Konfigurasi database
+- Database dapat diakses pada file berikut : [Database]()
+- Konfigurasi untuk koneksi ke database dapat diakses pada file berikut : [Constant]()
 
 ## Controllers
 Pada project ini penulis, menggunakan ... controller yakni ... . Method yang digunakan dalam controller tersebut antara lain :
@@ -55,3 +55,7 @@ Berikut adalah merupakan tangkapan layar dari view ini.
 Berikut adalah merupakan tangkapan layar dari view ini.
 ![]()
 
+## Kendala yang Dialami Penulis
+***1.*** Beberapa kali source code gagal untuk connect ke database.
+***2.***
+***3.***
