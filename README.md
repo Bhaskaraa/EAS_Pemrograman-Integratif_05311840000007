@@ -1,6 +1,6 @@
 # Evaluasi Akhir Semester - Pemrograman Integratif 2020
 Repositori sebagai dokumentasi Final Project dan Evaluasi Akhir Semester Pemrograman Integratif 2020 \
-Oleh : 
+Disusun oleh : 
 ```
 Nama        :   I Gde Made Bhaskara Jala Dhananjaya 
 NRP         :   05311840000007 
