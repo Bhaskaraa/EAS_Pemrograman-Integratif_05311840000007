@@ -1,5 +1,5 @@
 # Evaluasi Akhir Semester - Pemrograman Integratif 2020
-Repositori sebagai dokumentasi Final Project dan Evaluasi Akhir Semester Pemrograman Integratif 2020 \
+Repository sebagai dokumentasi Final Project dan Evaluasi Akhir Semester Pemrograman Integratif 2020 \
 Disusun oleh : 
 ```
 Nama        :   I Gde Made Bhaskara Jala Dhananjaya 
