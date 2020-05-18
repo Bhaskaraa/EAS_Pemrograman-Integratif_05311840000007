@@ -1,0 +1,130 @@
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Judul}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.21/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.21/datatables.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DONASI COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sumbangan/index">Donasi {% if nav == TRUE %}<span class="sr-only">(current)</span>{% endif %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../jenis">Rekap Donasi {% if nav == FALSE %}<span class="sr-only">(current)</span>{% endif %}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<div class="container pt-5">
+  <h1 class="text-center">FORM INPUT DONASI COVID-19</h1>
+    {% if note is defined %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{ note }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    {% if alert is defined %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ alert }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    <form action="inputdata" method="POST">
+        <div class="form-group pt-2">
+          <label for="name" class="font-weight-bolder">Nama</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nama Lengkap Anda">
+        </div>
+        <div class="form-group pt-2">
+          <label for="gender" class="font-weight-bolder">Jenis Kelamin</label>
+          <select class="form-control" id="gender" name="gender">
+            <option value="0">Perempuan</option>
+            <option value="1">Laki-laki</option>
+            </select>
+        </div>
+
+        <div class="form-group field_wrapper pt-2">
+            <label for="jenis_sumbangan[] " class="font-weight-bolder">Kategori Donasi</label>
+            <div class="row">
+                <div class="col-11">
+                    <input class="form-control" type="text" list="jenis_sumbangan[]" name="jenis_sumbangan[]" />
+                    <datalist id="jenis_sumbangan[]">
+                        {% for a in barang %}
+                        <option>{{ a.barang }}</option>
+                        {% endfor %}
+                    </datalist>
+                    <div class="form-group pt-2"></div>
+                    <label for="jumlah[]" class="font-weight-bolder">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah[]" name="jumlah[]" placeholder="Contoh : 100">
+                    <small id="jumlah" class="form-text text-muted">dalam kg/pcs/liter/satuan yang terkait.</small>
+                </div>
+                <div class="col">
+                    <a href="javascript:void(0);" class="add_button btn btn-dark" title="Add field">+</a>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="form-group pt-2">
+          <button type="submit" class="btn btn-dark" name="submit" id="submit">Donasikan</button>
+      </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var maxField = 10; //Input fields increment limitation
+        var addButton = $('.add_button'); //Add button selector
+        var wrapper = $('.field_wrapper'); //Input field wrapper
+        var fieldHTML = '<div><label for="jenis_sumbangan[]">Jenis Sumbangan</label><div class="row"> '+
+                        '    <div class="col-11"> '+
+                        '        <input class="form-control" type="text" list="jenis_sumbangan" name="jenis_sumbangan[]" /> '+
+                        '        <datalist id="jenis_sumbangan"> '+
+                        '            <option>Beras</option> '+
+                        '            <option>Minyak Goreng</option> '+
+                        '            <option>Mie Instant</option> '+
+                        '            <option>Gula</option> '+
+                        '        </datalist> '+
+                        '        <label for="jumlah">Jumlah</label> '+
+                        '        <input type="number" class="form-control" id="jumlah" name="jumlah[]" placeholder="Contoh: 5"> '+
+                        '        <small id="jumlah" class="form-text text-muted">dalam kg/pcs/liter.</small> '+
+                        '    </div> '+
+                        '    <div class="col"> '+
+                        '        <a href="javascript:void(0);" class="remove_button btn btn-danger">-</a> '+
+                        '    </div> '+
+                        '</div></div>'; //New input field html
+        var x = 1; //Initial field counter is 1
+        
+        //Once add button is clicked
+        $(addButton).click(function(){
+            //Check maximum number of input fields
+            if(x < maxField){ 
+                x++; //Increment field counter
+                $(wrapper).append(fieldHTML); //Add field html
+            }
+        });
+        
+        //Once remove button is clicked
+        $(wrapper).on('click', '.remove_button', function(e){
+            e.preventDefault();
+            $(this).parent('div').parent('div').parent('div').remove(); //Remove field html
+            x--; //Decrement field counter
+        });
+    });
+</script>
+{% endblock %}
