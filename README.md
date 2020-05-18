@@ -34,7 +34,7 @@ Struktur tabel jenis_sumbangan adalah sebagai berikut :
 - `id`, kolom ini akan berisi data mengenai id jenis/kategori donasi.
 - `barang`, kolom ini akan berisi data mengenai jenis donasi yang didonasikan.
 
-Pada model [Sumbangan]() , method yang digunakan adalah sebagai berikut :
+Pada model [Sumbang](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/models/Sumbang.php) , method yang digunakan adalah sebagai berikut :
 - `getName()`, method ini berfungsi untuk mendapatkan kategori donasi yang diinputkan.
 - `setUser()`, method ini berfungsi untuk menginput semua data yang berhubungan dengan donatur yakni nama, gender, dan id).
 - `isThere()`, method ini berfungsi untuk mencari id berdasarkan jenis/kategori donasi.
