@@ -13,7 +13,7 @@ Pada project kali ini, penulis ditugaskan untuk membuat website sederhana berbas
 - Database dapat diakses pada file berikut : [Database](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi.sql)
 
 ## Controllers
-Pada project ini penulis, menggunakan tiga controller yakni [Home](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Home.php), [Jenis](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Jenis.php), dan [Sumbangan](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Sumbangan.php) . Method yang digunakan dalam controller tersebut antara lain :
+Pada project ini, penulis menggunakan tiga controller yakni [Home](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Home.php), [Jenis](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Jenis.php), dan [Sumbangan](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Sumbangan.php) . Method yang digunakan dalam controller tersebut antara lain :
 - `index()`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
 - `filter()`, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
 - `inputdata()`, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
