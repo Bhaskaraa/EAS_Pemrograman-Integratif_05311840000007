@@ -6,19 +6,21 @@ Nama        :   I Gde Made Bhaskara Jala Dhananjaya
 NRP         :   05311840000007 
 Departemen  :   Teknologi Informasi
 ```
+## Overview Aplikasi
+Project kali ini, penulis ditugaskan untuk membuat website sederhana berbasis MVC sebagai tempat untuk donasi bagi bencana pandemik Covid-19. Website ini akan memudahkan donatur untuk mengisi donasi yang diinginkan melalui form yang disediakan. Selain itu donatur juga dapat melihat rekapan dari donasi yang telah diinput.
 
 ## Setup
 - Database dapat diakses pada file berikut : [Database](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi.sql)
 - Konfigurasi untuk koneksi ke database dapat diakses pada file berikut : [Constant]()
 
 ## Controllers
-Pada project ini penulis, menggunakan tiga controller yakni [Home](), [Jenis](), dan [Sumbangan]() . Method yang digunakan dalam controller tersebut antara lain :
+Pada project ini penulis, menggunakan tiga controller yakni [Home](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Home.php), [Jenis](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Jenis.php), dan [Sumbangan](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Sumbangan.php) . Method yang digunakan dalam controller tersebut antara lain :
 - `index()`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
 - `filter()`, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
 - `inputdata()`, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
 
 ## Models
-Pada project ini, penulis menggunakan satu models untuk masing-masing tabel yakni [Sumbangan]() . \
+Pada project ini, penulis menggunakan satu models untuk masing-masing tabel yakni [Sumbang](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/models/Sumbang.php) . \
 Struktur tabel sumbangan adalah sebagai berikut :
 - `s_id`, kolom ini akan berisi data mengenai id dari donasi yang dilakukan/diinput.
 - `p_id`, kolom ini akan berisi data mengenai id dari donatur.
