@@ -42,28 +42,32 @@ Pada model ... , method yang digunakan adalah sebagai berikut :
 
 ## Views
 Pada project ini, penulis menggunakan beberapa views yang digunakan sebagai tampilan fungsional dari web. View yang penulis gunakan antara lain :
-- ***a***, view ini digunakan untuk \
+- ***Home***, view ini digunakan sebagai halaman awal (landing page). Dalam halaman ini terdapat dua button. Pertama ada button ***Form Donasi*** yang akan mengarah ke view form untuk menginput data donasi. Yang kedua adalah button ***Rekap Donasi*** yang mengarah pada view rekapan data donasi.\
 Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Landing%20Page.PNG)
 
-- ***b***, view ini digunakan untuk \
+- ***Sumbangan***, view ini digunakan sebagai halaman pengisian form donasi. Pada halaman ini, kita dapat menginput data mengenai donasi yang terdiri dari nama, gender, jenis/kategori donasi, dan jumlah donasi.  \
 Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Form%20Input.PNG)
+- Kita dapat mengisi data kategori donasi dengan kuantitas lebih dari satu kategori.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Pengisian%20Form%20Input.PNG)
+- Dan jika data telah masuk ke database, akan muncul pemberitahuan atau pop up seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Donasi%20Berhasil.PNG)
 
-- ***c***, view ini digunakan untuk \
-Berikut adalah merupakan tangkapan layar dari view ini.
+- ***Jenis***, view ini digunakan sebagai halaman untuk menampilkan rekapan donasi pada database. Tampilan tabel adalah seperti di bawah ini. \
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Rekapan%20Donasi.PNG)
+- Pada halaman ini kita dapat melakukan filter menggunakan ***nama donatur*** seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Filer%20Nama%20Donarut.PNG)
+- Pada halaman ini juga kita dapat melakukan filter berdasarkan ***kategori donasi*** untuk mendapatkan id dan nama donatur.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Filter%20Kategori%20Donasi.PNG)
 
-- ***c***, view ini digunakan untuk \
-Berikut adalah merupakan tangkapan layar dari view ini.
+## Error
+- Jika donatur belum menginputkan namanya, maka data tidak dapat dimasukkan ke database dan akan muncul pop up seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror1.PNG)
+- Jika data tidak ada, maka tabel akan kosong seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror2.PNG)
 
 ## Kendala yang Dialami Penulis
 ***1.*** Beberapa kali source code gagal untuk connect ke database.
-***2.***
-***3.***
+***2.*** Penulis perlu mencari berbagai sumber untuk dapat menangani kondisi seperti kuantitas donasi yang dapat lebih dari satu jenis/kategori.
+***3.*** Beberapa kali terjadi kendala saat sinkronisasi program.
