@@ -13,7 +13,7 @@ Departemen  :   Teknologi Informasi
 
 ## Controllers
 Pada project ini penulis, menggunakan tiga controller yakni [Home](), [Jenis](), dan [Sumbangan]() . Method yang digunakan dalam controller tersebut antara lain :
-- `***index()***`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
+- `index()`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
 - ***filter()***, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
 - ***inputdata()***, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
 
@@ -22,11 +22,13 @@ Pada project ini, penulis menggunakan satu models untuk masing-masing tabel yakn
 Struktur tabel sumbangan adalah sebagai berikut :
 - ***s_id***, kolom ini akan berisi data mengenai id dari donasi yang dilakukan/diinput.
 - ***p_id***, kolom ini akan berisi data mengenai id dari donatur.
-- ***j_id***, kolom ini akan berisi data mengenai id dari jenis/kategori donasi. \
+- ***j_id***, kolom ini akan berisi data mengenai id dari jenis/kategori donasi. 
+
 Struktur tabel penyumbang adalah sebagai berikut :
 - ***id***, kolom ini akan berisi data mengenai id donatur.
 - ***name***, kolom ini akan berisi data mengenai nama donatur.
 - ***gender***, kolom ini akan berisi data mengenai gender donatur.
+
 Struktur tabel jenis_sumbangan adalah sebagai berikut :
 - ***id***, kolom ini akan berisi data mengenai id jenis/kategori donasi.
 - ***barang***, kolom ini akan berisi data mengenai jenis donasi yang didonasikan.
@@ -64,10 +66,10 @@ Berikut adalah merupakan tangkapan layar dari view ini.
 ## Error
 - Jika donatur belum menginputkan namanya, maka data tidak dapat dimasukkan ke database dan akan muncul pop up seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror1.PNG)
-- Jika data tidak ada, maka tabel akan kosong seperti di bawah ini.
+- Pada halaman rekapan, jika data tidak ada, maka tabel akan kosong seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror2.PNG)
 
 ## Kendala yang Dialami Penulis
-***1.*** Beberapa kali source code gagal untuk connect ke database.
-***2.*** Penulis perlu mencari berbagai sumber untuk dapat menangani kondisi seperti kuantitas donasi yang dapat lebih dari satu jenis/kategori.
+***1.*** Beberapa kali source code gagal untuk connect ke database. \
+***2.*** Penulis perlu mencari berbagai sumber untuk dapat menangani kondisi seperti kuantitas donasi yang dapat lebih dari satu jenis/kategori. \
 ***3.*** Beberapa kali terjadi kendala saat sinkronisasi program.
