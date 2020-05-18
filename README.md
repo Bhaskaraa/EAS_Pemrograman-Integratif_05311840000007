@@ -7,7 +7,7 @@ NRP         :   05311840000007
 Departemen  :   Teknologi Informasi
 ```
 ## Overview Aplikasi
-Project kali ini, penulis ditugaskan untuk membuat website sederhana berbasis MVC sebagai tempat untuk donasi bagi bencana pandemik Covid-19. Website ini akan memudahkan donatur untuk mengisi donasi yang diinginkan melalui form yang disediakan. Selain itu donatur juga dapat melihat rekapan dari donasi yang telah diinput.
+Pada project kali ini, penulis ditugaskan untuk membuat website sederhana berbasis MVC sebagai tempat untuk donasi bagi bencana pandemik Covid-19. Website ini akan memudahkan donatur untuk mengisi donasi yang diinginkan melalui form yang disediakan. Selain itu donatur juga dapat melihat rekapan dari donasi yang telah diinput.
 
 ## Setup
 - Database dapat diakses pada file berikut : [Database](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi.sql)
