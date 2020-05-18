@@ -45,15 +45,24 @@ Pada model ... , method yang digunakan adalah sebagai berikut :
 Pada project ini, penulis menggunakan beberapa views yang digunakan sebagai tampilan fungsional dari web. View yang penulis gunakan antara lain :
 - ***a***, view ini digunakan untuk \
 Berikut adalah merupakan tangkapan layar dari view ini.
-![]()
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Landing%20Page.PNG)
 
 - ***b***, view ini digunakan untuk \
 Berikut adalah merupakan tangkapan layar dari view ini.
-![]()
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Form%20Input.PNG)
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Pengisian%20Form%20Input.PNG)
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Donasi%20Berhasil.PNG)
 
 - ***c***, view ini digunakan untuk \
 Berikut adalah merupakan tangkapan layar dari view ini.
-![]()
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Rekapan%20Donasi.PNG)
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Filer%20Nama%20Donarut.PNG)
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Filter%20Kategori%20Donasi.PNG)
+
+- ***c***, view ini digunakan untuk \
+Berikut adalah merupakan tangkapan layar dari view ini.
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror1.PNG)
+![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror2.PNG)
 
 ## Kendala yang Dialami Penulis
 ***1.*** Beberapa kali source code gagal untuk connect ke database.
