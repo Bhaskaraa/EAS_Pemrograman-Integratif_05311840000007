@@ -11,7 +11,6 @@ Project kali ini, penulis ditugaskan untuk membuat website sederhana berbasis MV
 
 ## Setup
 - Database dapat diakses pada file berikut : [Database](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi.sql)
-- Konfigurasi untuk koneksi ke database dapat diakses pada file berikut : [Constant]()
 
 ## Controllers
 Pada project ini penulis, menggunakan tiga controller yakni [Home](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Home.php), [Jenis](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Jenis.php), dan [Sumbangan](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/controllers/Sumbangan.php) . Method yang digunakan dalam controller tersebut antara lain :
