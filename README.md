@@ -45,17 +45,17 @@ Pada model [Sumbang](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_053
 
 ## Views
 Pada project ini, penulis menggunakan beberapa views yang digunakan sebagai tampilan fungsional dari web. View yang penulis gunakan antara lain :
-- ***Home***, view ini digunakan sebagai halaman awal (landing page). Dalam halaman ini terdapat dua button. Pertama ada button ***Form Donasi*** yang akan mengarah ke view form untuk menginput data donasi. Yang kedua adalah button ***Rekap Donasi*** yang mengarah pada view rekapan data donasi. Berikut adalah merupakan tangkapan layar dari view ini.
+- [Home](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/views/home/index.html), view ini digunakan sebagai halaman awal (landing page). Dalam halaman ini terdapat dua button. Pertama ada button ***Form Donasi*** yang akan mengarah ke view form untuk menginput data donasi. Yang kedua adalah button ***Rekap Donasi*** yang mengarah pada view rekapan data donasi. Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Landing%20Page.PNG)
 
-- ***Sumbangan***, view ini digunakan sebagai halaman pengisian form donasi. Pada halaman ini, kita dapat menginput data mengenai donasi yang terdiri dari nama, gender, jenis/kategori donasi, dan jumlah donasi. Berikut adalah merupakan tangkapan layar dari view ini.
+- [Sumbangan](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/views/sumbangan/index.html), view ini digunakan sebagai halaman pengisian form donasi. Pada halaman ini, kita dapat menginput data mengenai donasi yang terdiri dari nama, gender, jenis/kategori donasi, dan jumlah donasi. Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Form%20Input.PNG)
 - Kita dapat mengisi data kategori donasi dengan kuantitas lebih dari satu kategori.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Pengisian%20Form%20Input.PNG)
 - Dan jika data telah masuk ke database, akan muncul pemberitahuan atau pop up seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Donasi%20Berhasil.PNG)
 
-- ***Jenis***, view ini digunakan sebagai halaman untuk menampilkan rekapan donasi pada database. Tampilan tabel adalah seperti di bawah ini. \
+- [Jenis](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/donasi/app/views/jenis/index.html), view ini digunakan sebagai halaman untuk menampilkan rekapan donasi pada database. Tampilan tabel adalah seperti di bawah ini. \
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Rekapan%20Donasi.PNG)
 - Pada halaman ini kita dapat melakukan filter menggunakan ***nama donatur*** seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Filer%20Nama%20Donarut.PNG)
