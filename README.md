@@ -13,7 +13,7 @@ Departemen  :   Teknologi Informasi
 
 ## Controllers
 Pada project ini penulis, menggunakan tiga controller yakni [Home](), [Jenis](), dan [Sumbangan]() . Method yang digunakan dalam controller tersebut antara lain :
-- ***index()***, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
+- `***index()***`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
 - ***filter()***, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
 - ***inputdata()***, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
 
