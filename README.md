@@ -14,42 +14,40 @@ Departemen  :   Teknologi Informasi
 ## Controllers
 Pada project ini penulis, menggunakan tiga controller yakni [Home](), [Jenis](), dan [Sumbangan]() . Method yang digunakan dalam controller tersebut antara lain :
 - `index()`, method ini berfungsi untuk mengatur $_SESSION yang akan digunakan dan mengarahkan view yang digunakan ke Landing Page, dimana pada landing page nanti akan terdapat dua pilihan yakni form dan rekap.
-- ***filter()***, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
-- ***inputdata()***, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
+- `filter()`, method ini berfungsi untuk melakukan filter pada view rekapan donasi.
+- `inputdata()`, method ini berfungsi untuk menginput data pada $_SESSION ke dalam database.
 
 ## Models
 Pada project ini, penulis menggunakan satu models untuk masing-masing tabel yakni [Sumbangan]() . \
 Struktur tabel sumbangan adalah sebagai berikut :
-- ***s_id***, kolom ini akan berisi data mengenai id dari donasi yang dilakukan/diinput.
-- ***p_id***, kolom ini akan berisi data mengenai id dari donatur.
-- ***j_id***, kolom ini akan berisi data mengenai id dari jenis/kategori donasi. 
+- `s_id`, kolom ini akan berisi data mengenai id dari donasi yang dilakukan/diinput.
+- `p_id`, kolom ini akan berisi data mengenai id dari donatur.
+- `j_id`, kolom ini akan berisi data mengenai id dari jenis/kategori donasi. 
 
 Struktur tabel penyumbang adalah sebagai berikut :
-- ***id***, kolom ini akan berisi data mengenai id donatur.
-- ***name***, kolom ini akan berisi data mengenai nama donatur.
-- ***gender***, kolom ini akan berisi data mengenai gender donatur.
+- `id`, kolom ini akan berisi data mengenai id donatur.
+- `name`, kolom ini akan berisi data mengenai nama donatur.
+- `gender`, kolom ini akan berisi data mengenai gender donatur.
 
 Struktur tabel jenis_sumbangan adalah sebagai berikut :
-- ***id***, kolom ini akan berisi data mengenai id jenis/kategori donasi.
-- ***barang***, kolom ini akan berisi data mengenai jenis donasi yang didonasikan.
+- `id`, kolom ini akan berisi data mengenai id jenis/kategori donasi.
+- `barang`, kolom ini akan berisi data mengenai jenis donasi yang didonasikan.
 
-Pada model ... , method yang digunakan adalah sebagai berikut :
-- ***getName()***, method ini berfungsi untuk mendapatkan kategori donasi yang diinputkan.
-- ***setUser()***, method ini berfungsi untuk menginput semua data yang berhubungan dengan donatur yakni nama, gender, dan id).
-- ***isThere()***, method ini berfungsi untuk mencari id berdasarkan jenis/kategori donasi.
-- ***setJS()***, method ini berfungsi untuk memasukan/menginput data jenis/kategori donasi ke database.
-- ***setSumbangan()***, method ini berfungsi untuk menginput semua data yang berhubungan dengan donasi yakni nama, gender, id, jumlah, jenis, dan lainnya.
-- ***getSumbangan()***, method ini berfungsi untuk mencari dan mendapatkan semua data yang berhubungan dengan donasi.
-- ***getFilterSumbangan()***, method ini berfungsi untuk mencari dan mendapatkan semua data donasi berdasarkan donaturnya.
+Pada model [Sumbangan]() , method yang digunakan adalah sebagai berikut :
+- `getName()`, method ini berfungsi untuk mendapatkan kategori donasi yang diinputkan.
+- `setUser()`, method ini berfungsi untuk menginput semua data yang berhubungan dengan donatur yakni nama, gender, dan id).
+- `isThere()`, method ini berfungsi untuk mencari id berdasarkan jenis/kategori donasi.
+- `setJS()`, method ini berfungsi untuk memasukan/menginput data jenis/kategori donasi ke database.
+- `setSumbangan()`, method ini berfungsi untuk menginput semua data yang berhubungan dengan donasi yakni nama, gender, id, jumlah, jenis, dan lainnya.
+- `getSumbangan()`, method ini berfungsi untuk mencari dan mendapatkan semua data yang berhubungan dengan donasi.
+- `getFilterSumbangan()`, method ini berfungsi untuk mencari dan mendapatkan semua data donasi berdasarkan donaturnya.
 
 ## Views
 Pada project ini, penulis menggunakan beberapa views yang digunakan sebagai tampilan fungsional dari web. View yang penulis gunakan antara lain :
-- ***Home***, view ini digunakan sebagai halaman awal (landing page). Dalam halaman ini terdapat dua button. Pertama ada button ***Form Donasi*** yang akan mengarah ke view form untuk menginput data donasi. Yang kedua adalah button ***Rekap Donasi*** yang mengarah pada view rekapan data donasi.\
-Berikut adalah merupakan tangkapan layar dari view ini.
+- ***Home***, view ini digunakan sebagai halaman awal (landing page). Dalam halaman ini terdapat dua button. Pertama ada button ***Form Donasi*** yang akan mengarah ke view form untuk menginput data donasi. Yang kedua adalah button ***Rekap Donasi*** yang mengarah pada view rekapan data donasi. Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Landing%20Page.PNG)
 
-- ***Sumbangan***, view ini digunakan sebagai halaman pengisian form donasi. Pada halaman ini, kita dapat menginput data mengenai donasi yang terdiri dari nama, gender, jenis/kategori donasi, dan jumlah donasi.  \
-Berikut adalah merupakan tangkapan layar dari view ini.
+- ***Sumbangan***, view ini digunakan sebagai halaman pengisian form donasi. Pada halaman ini, kita dapat menginput data mengenai donasi yang terdiri dari nama, gender, jenis/kategori donasi, dan jumlah donasi. Berikut adalah merupakan tangkapan layar dari view ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Form%20Input.PNG)
 - Kita dapat mengisi data kategori donasi dengan kuantitas lebih dari satu kategori.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Pengisian%20Form%20Input.PNG)
@@ -66,7 +64,7 @@ Berikut adalah merupakan tangkapan layar dari view ini.
 ## Error
 - Jika donatur belum menginputkan namanya, maka data tidak dapat dimasukkan ke database dan akan muncul pop up seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror1.PNG)
-- Pada halaman rekapan, jika data tidak ada, maka tabel akan kosong seperti di bawah ini.
+- Pada halaman rekapan donasi, jika data tidak ada, maka tabel akan kosong seperti di bawah ini.
 ![](https://github.com/Bhaskaraa/EAS_Pemrograman-Integratif_05311840000007/blob/master/Screenshot/Eror2.PNG)
 
 ## Kendala yang Dialami Penulis
